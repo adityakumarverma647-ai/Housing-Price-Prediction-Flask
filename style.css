@@ -1,0 +1,583 @@
+/* ===========================
+   Google Font
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===========================
+   Reset
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ===========================
+   Body
+=========================== */
+
+body{
+
+    background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+
+    color:white;
+
+}
+
+/* ===========================
+   Navigation
+=========================== */
+
+.navbar{
+
+    width:100%;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 60px;
+
+    background:rgba(0,0,0,.25);
+
+    backdrop-filter:blur(12px);
+
+    z-index:999;
+
+}
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-left:30px;
+
+    font-size:17px;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#38bdf8;
+
+}
+
+/* ===========================
+   Hero
+=========================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:120px 30px 60px;
+
+}
+
+.hero h1{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    max-width:750px;
+
+    line-height:1.8;
+
+    font-size:20px;
+
+    color:#dbeafe;
+
+}
+
+.btn{
+
+    margin-top:35px;
+
+    display:inline-block;
+
+    background:#38bdf8;
+
+    color:white;
+
+    padding:15px 40px;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    font-size:18px;
+
+    transition:.4s;
+
+    border:none;
+
+    cursor:pointer;
+
+}
+
+.btn:hover{
+
+    background:#0ea5e9;
+
+    transform:translateY(-3px);
+
+}
+
+/* ===========================
+   About Section
+=========================== */
+
+.about{
+
+    width:90%;
+
+    margin:auto;
+
+    padding:80px 0;
+
+}
+
+.about h2{
+
+    text-align:center;
+
+    font-size:40px;
+
+    margin-bottom:50px;
+
+}
+
+.about-text{
+
+    margin-top:40px;
+
+    text-align:center;
+
+    color:#dbeafe;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+/* ===========================
+   Cards
+=========================== */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+}
+
+.info-card{
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(15px);
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:.4s;
+
+}
+
+.info-card:hover{
+
+    transform:translateY(-10px);
+
+    background:rgba(255,255,255,.18);
+
+}
+
+.info-card h3{
+
+    margin-bottom:15px;
+
+    font-size:24px;
+
+}
+
+.info-card p{
+
+    color:#e2e8f0;
+
+}
+/* ===========================
+   Prediction Section
+=========================== */
+
+.predict{
+
+    width:90%;
+
+    margin:auto;
+
+    padding:80px 0;
+
+}
+
+.form-card{
+
+    background:rgba(255,255,255,.10);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:25px;
+
+    padding:45px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+}
+
+.form-card h2{
+
+    text-align:center;
+
+    font-size:38px;
+
+    margin-bottom:35px;
+
+}
+
+/* ===========================
+   Form Grid
+=========================== */
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:22px;
+
+}
+
+.grid div{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+label{
+
+    margin-bottom:8px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#e2e8f0;
+
+}
+
+input{
+
+    padding:14px 18px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,.18);
+
+    color:white;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+input::placeholder{
+
+    color:#d1d5db;
+
+}
+
+input:focus{
+
+    outline:none;
+
+    background:rgba(255,255,255,.25);
+
+    box-shadow:0 0 12px rgba(56,189,248,.5);
+
+}
+
+button{
+
+    margin-top:35px;
+
+    width:100%;
+
+}
+
+/* ===========================
+   Prediction Result
+=========================== */
+
+.result-card{
+
+    margin-top:40px;
+
+    background:linear-gradient(135deg,#16a34a,#22c55e);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    animation:fadeUp .8s ease;
+
+}
+
+.result-card h3{
+
+    font-size:28px;
+
+    margin-bottom:15px;
+
+}
+
+.result-card p{
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+
+    margin-top:90px;
+
+    padding:45px 20px;
+
+    background:rgba(0,0,0,.35);
+
+    text-align:center;
+
+}
+
+footer h3{
+
+    font-size:26px;
+
+    margin-bottom:10px;
+
+}
+
+footer p{
+
+    color:#cbd5e1;
+
+    line-height:1.8;
+
+}
+
+/* ===========================
+   Animations
+=========================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.hero,
+.about,
+.predict,
+footer{
+
+    animation:fadeUp 1s ease;
+
+}
+
+/* ===========================
+   Scrollbar
+=========================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#0f172a;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#38bdf8;
+
+    border-radius:20px;
+
+}
+
+/* ===========================
+   Responsive Design
+=========================== */
+
+@media(max-width:900px){
+
+    .navbar{
+
+        flex-direction:column;
+
+        gap:15px;
+
+        padding:20px;
+
+    }
+
+    nav{
+
+        display:flex;
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+    }
+
+    nav a{
+
+        margin:10px;
+
+    }
+
+    .hero h1{
+
+        font-size:40px;
+
+    }
+
+    .hero p{
+
+        font-size:18px;
+
+    }
+
+    .form-card{
+
+        padding:25px;
+
+    }
+
+    .grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .hero h1{
+
+        font-size:32px;
+
+    }
+
+    .hero p{
+
+        font-size:16px;
+
+    }
+
+    .about h2{
+
+        font-size:30px;
+
+    }
+
+    .form-card h2{
+
+        font-size:30px;
+
+    }
+
+    .logo{
+
+        font-size:22px;
+
+    }
+
+}

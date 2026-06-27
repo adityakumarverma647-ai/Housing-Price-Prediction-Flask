@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housing Price Prediction | Portfolio</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        🏠 Housing Price Prediction
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#predict">Predict</a>
+    </nav>
+
+</header>
+
+<section id="home" class="hero">
+
+    <h1>California Housing Price Prediction</h1>
+
+    <p>
+        Predict estimated house prices using a Machine Learning
+        model trained on the California Housing Dataset.
+    </p>
+
+    <a href="#predict" class="btn">
+        Predict Now
+    </a>
+
+</section>
+
+<section id="about" class="about">
+
+    <h2>About This Project</h2>
+
+    <div class="cards">
+
+        <div class="info-card">
+            <h3>📊 Dataset</h3>
+            <p>California Housing Dataset</p>
+        </div>
+
+        <div class="info-card">
+            <h3>🤖 Model</h3>
+            <p>Linear Regression</p>
+        </div>
+
+        <div class="info-card">
+            <h3>🐍 Language</h3>
+            <p>Python</p>
+        </div>
+
+        <div class="info-card">
+            <h3>🌐 Framework</h3>
+            <p>Flask</p>
+        </div>
+
+    </div>
+
+    <p class="about-text">
+
+        This project predicts California housing prices using
+        Linear Regression.
+
+        It demonstrates data preprocessing, visualization,
+        model training, prediction, and deployment using Flask.
+
+    </p>
+
+</section>
+
+<section id="predict" class="predict">
+
+    <div class="form-card">
+
+        <h2>Prediction Form</h2>
+
+        <form action="/predict" method="POST">
+
+            <div class="grid">
+
+                <div>
+                    <label>Median Income</label>
+                    <input type="number" step="any" name="MedInc" required>
+                </div>
+
+                <div>
+                    <label>House Age</label>
+                    <input type="number" step="any" name="HouseAge" required>
+                </div>
+
+                <div>
+                    <label>Average Rooms</label>
+                    <input type="number" step="any" name="AveRooms" required>
+                </div>
+
+                <div>
+                    <label>Average Bedrooms</label>
+                    <input type="number" step="any" name="AveBedrms" required>
+                </div>
+
+                <div>
+                    <label>Population</label>
+                    <input type="number" step="any" name="Population" required>
+                </div>
+
+                <div>
+                    <label>Average Occupancy</label>
+                    <input type="number" step="any" name="AveOccup" required>
+                </div>
+
+                <div>
+                    <label>Latitude</label>
+                    <input type="number" step="any" name="Latitude" required>
+                </div>
+
+                <div>
+                    <label>Longitude</label>
+                    <input type="number" step="any" name="Longitude" required>
+                </div>
+
+            </div>
+
+            <button class="btn" type="submit">
+
+                Predict House Price
+
+            </button>
+
+        </form>
+
+        {% if prediction_text %}
+
+        <div class="result-card">
+
+            <h3>Prediction Result</h3>
+
+            <p>{{ prediction_text }}</p>
+
+        </div>
+
+        {% endif %}
+
+    </div>
+
+</section>
+
+<footer>
+
+    <h3>Developed by Aditya Kumar Verma</h3>
+
+    <p>
+
+        Python • Flask • Scikit-Learn • Machine Learning
+
+    </p>
+
+</footer>
+
+</body>
+</html>
