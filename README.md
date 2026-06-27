@@ -1,31 +1,45 @@
 # 🏠 Housing Price Prediction Flask Web Application
 
-A responsive Machine Learning web application built with **Flask** and **Scikit-Learn** that predicts California housing prices using a trained Linear Regression model.
+A professional Machine Learning web application built with **Flask** that predicts California housing prices using a trained **Linear Regression** model.
 
 ---
 
-## 🚀 Features
+# 🌐 Live Demo
 
-- Professional Responsive User Interface
-- Real-Time House Price Prediction
-- Flask Backend
-- Linear Regression Machine Learning Model
-- Clean and Modern Design
-- Easy to Run Locally
-- Ready for Deployment
+🔗 **Website:** https://housing-price-prediction-flask.onrender.com
 
 ---
 
-## 🛠️ Technologies Used
+# 📌 Project Overview
 
-- Python
-- Flask
-- Scikit-Learn
-- Pandas
-- NumPy
-- HTML5
-- CSS3
-- Pickle
+This project demonstrates the complete deployment of a Machine Learning model using Flask. Users can enter housing-related features and receive an estimated house price instantly through a clean and responsive web interface.
+
+---
+
+# ✨ Features
+
+* 🏠 House Price Prediction
+* 🤖 Machine Learning Model (Linear Regression)
+* 🌐 Flask Web Application
+* 📱 Responsive User Interface
+* 🎨 Modern HTML & CSS Design
+* 🚀 Deployed on Render
+* 📊 Real-time Prediction
+
+---
+
+# 🛠️ Technologies Used
+
+* Python
+* Flask
+* Scikit-learn
+* Pandas
+* NumPy
+* HTML5
+* CSS3
+* Pickle
+* Render
+* GitHub
 
 ---
 
@@ -36,10 +50,15 @@ Housing-Price-Prediction-Flask/
 │
 ├── app.py
 ├── model.pkl
-├── index.html
-├── style.css
 ├── requirements.txt
 ├── README.md
+│
+├── templates/
+│   └── index.html
+│
+├── static/
+│   └── style.css
+│
 ├── home.png
 ├── about.png
 ├── prediction_form.png
@@ -50,28 +69,28 @@ Housing-Price-Prediction-Flask/
 
 # 🤖 Machine Learning Model
 
-**Algorithm Used**
+**Algorithm**
 
-- Linear Regression
+* Linear Regression
 
 **Dataset**
 
-- California Housing Dataset
+* California Housing Dataset
 
 **Input Features**
 
-- Median Income
-- House Age
-- Average Rooms
-- Average Bedrooms
-- Population
-- Average Occupancy
-- Latitude
-- Longitude
+* Median Income
+* House Age
+* Average Rooms
+* Average Bedrooms
+* Population
+* Average Occupancy
+* Latitude
+* Longitude
 
 **Output**
 
-- Estimated House Price
+* Estimated House Price
 
 ---
 
@@ -109,25 +128,25 @@ Clone the repository
 git clone https://github.com/adityakumarverma647-ai/Housing-Price-Prediction-Flask.git
 ```
 
-Move into the project folder
+Move into the project
 
 ```bash
 cd Housing-Price-Prediction-Flask
 ```
 
-Install the required packages
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the Flask application
+Run the application
 
 ```bash
 python app.py
 ```
 
-Open your browser
+Open in your browser
 
 ```text
 http://127.0.0.1:5000
@@ -135,13 +154,24 @@ http://127.0.0.1:5000
 
 ---
 
-# 📌 Future Improvements
+# 🚀 Deployment
 
-- Deploy on Render
-- Add Multiple Machine Learning Models
-- Improve UI with Charts and Analytics
-- Add User Authentication
-- Docker Support
+This project is successfully deployed on **Render**.
+
+**Live Website**
+
+https://housing-price-prediction-flask.onrender.com
+
+---
+
+# 🔮 Future Improvements
+
+* Add Multiple ML Models
+* Model Comparison
+* User Authentication
+* Prediction History
+* Interactive Data Visualizations
+* Docker Deployment
 
 ---
 
@@ -149,13 +179,10 @@ http://127.0.0.1:5000
 
 **Aditya Kumar Verma**
 
-B.Tech Computer Science & Engineering (Artificial Intelligence)
+B.Tech – Computer Science & Engineering (Artificial Intelligence)
 
-Machine Learning | Python | Flask Developer
-
-GitHub:
-https://github.com/adityakumarverma647-ai
+📧 GitHub: https://github.com/adityakumarverma647-ai
 
 ---
 
-⭐ If you found this project useful, please consider giving it a Star.
+⭐ If you like this project, don't forget to **Star** this repository.
